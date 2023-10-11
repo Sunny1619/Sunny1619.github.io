@@ -11,9 +11,6 @@
 
 <body>
   <div id="preloader">
-    <h1 class="wait">
-      It might take a while.
-      Please be patient.</h1>
     <div class="center">
       <div class="wave"></div>
       <div class="wave"></div>
@@ -26,9 +23,18 @@
       <div class="wave"></div>
       <div class="wave"></div>
     </div>
+    <div class="wait">
+      <h1>It might take a while. Please be patient.</h1>
+    </div>
+  </div>
+  <div class="canvas">
+    <div class="crossHair">
+      <h1>+</h1>
+    </div>
+    <p>Double click to lock mouse. Use W,A,S,D to move and click to open door.</p>
+    <canvas class="canvas"></canvas>
   </div>
 
-  <canvas class="canvas"></canvas>
   <script type="module" src="./main.js"></script>
 </body>
 

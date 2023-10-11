@@ -6,22 +6,62 @@ body {
 }
 
 .wait {
-  color: rgb(222, 239, 248);
+  color: rgba(222, 239, 248, 0.727);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  z-index: 1;
+  flex-grow: 1;
+}
+
+canvas.canvas {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  z-index: -1;
+}
+
+div.canvas>p {
+  color: #ffffff9a;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   position: relative;
-  top: 70vh;
+  top: -10vh;
+  user-select: none;
+}
+
+div.crossHair {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+div.crossHair>h1 {
+  color: #ffffff9a;
+  text-align: center;
+  user-select: none;
+}
+
+div.canvas {
+  height: 100vh;
+  width: 100vw;
 }
 
 #preloader {
   margin: 0px;
   border: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #000;
 }
 
 .center {
-  height: 100vh;
   display: flex;
+  flex-grow: 3.5;
   justify-content: center;
   align-items: center;
   background: #000;
@@ -97,7 +137,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 html,
 body {
